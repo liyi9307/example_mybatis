@@ -1,0 +1,23 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.44.131:3306/spring_boot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: scgcw5053
+    type: com.alibaba.druid.pool.DruidDataSource
+    #����Դ���������ã��������ⲿ����Դ����Ҫ����Դע����config
+    maxActive: 20
+    initialSize: 5
+    maxWait: 60000
+    minIdle: 5
+
+server:
+  port: 80
+
+
+mybatis:
+  config-location: classpath:mybatis_mapper.xml
+  mapper-locations: classpath:mapper/*.xml
+
+
